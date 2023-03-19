@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/paw.png" type="image/x-icon">
+    <title>Happy Paws</title>
+    <link rel="stylesheet" href="/CSS/ReqAppointCss/Req.css">
+    <link rel="stylesheet" href="/CSS/homeCss/HomePage.css">
+    <link rel="stylesheet" media="(max-width:1100px) and (min-width:752px)" href="/CSS/homeCss/tablet.css">
+    <link rel="stylesheet" media="(max-width:1100px) and (min-width:752px)" href="/CSS/ReqAppointCss/ReqTablet.css">
+    <link rel="stylesheet" media="(max-width:752px)" href="/CSS/homeCss/phone.css">
+    <link rel="stylesheet" media="(max-width:752px)" href="/CSS/ReqAppointCss/ReqMobile.css">
+</head>
+<body>
+    <div class="cover">
+        <header>
+            <nav class="navigationBar">
+                <div class="logo" onclick="location.href
+                ='/HTML/index.html'">HAPPY PAWS</div>
+                <!-- <div> -->
+                <ul class="navigation">
+                    <li><a href="/HTML/index.html">Home</a></li>
+                    <li><a href="/HTML/OwnDog.html">Own A Dog</a></li>
+                    <li><a href="/HTML/Donate.html">Donate A Dog</a></li>
+                    <li><a href="/HTML/veteran.html">veterinarian</a></li>
+                    <!-- <li><a href="#">About Us</a></li> -->
+                </ul>
+                <!-- </div> -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <!-- image Header -->
+        <header class="headerImg">
+            <section class="onImg">
+                <div class="divBorder">
+                    <div class="container">
+                        <h2>Book A Free Appointment Now!</h2>
+                        <form action="" onsubmit="myFunction()">
+                            <div class="form-group"><input type="text" placeholder="Enter Your Dog's Name" required></div>
+                            <div class="form-group"><input type="text" placeholder="Enter Dog's Age"></div>
+                            <div class="form-group"><input type="text" placeholder="Enter Breed"></div>
+                            <div class="form-group"><input type="text" placeholder="Enter Parent Name"></div>
+                            <div class="form-group"><input type="email" placeholder="Enter Your Email"></div>
+                            <div class="form-group"><input type="email" placeholder="Enter Your Contact Number"></div>
+                            <div class="form-group">
+                                <p id="Appointment" class="form-group">Select Service For Your Dog</p>
+                                <select name="services" id="">
+                                    <option value="" selected disabled hidden><h6>---Select---</h6></option>
+                                    <option value="">Dog Walking</option>
+                                    <option value="">Dog Swimming</option>
+                                    <option value="">Dog Grooming</option>
+                                    <option value="">Dog DayCare</option>
+                                    <option value="">Dog Training</option>
+                                    <option value="">Dog Transport</option>
+                                    <option value="">Veteran</option>
+                                    <option value="">Hostel</option>
+                                </select>
+                            </div>
+                            <p id="Appointment" class="form-group">Enter Date For Appointment </p>
+                            <div class="form-group"><input type="date" placeholder="Enter Date For Appointment"></div>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="content">We are delighted to offer a range of services to ensure your furry friend receives the best care possible.</div>
+                </section>
+        </header>  
+       
+        <!--Footer Section  -->
+        <footer class>
+            <p class="para-primary ">Find us on Social media</p>
+            <div class="footer-items">
+                <a href="https://facebook.com" target="_blank"> <img src="/img/socialMediaicon/facebook.png" alt=""
+                        class="social-logo"> </a>
+                <a href="https://instagram.com" target="_blank"> <img src="/img/socialMediaicon/instagram.png" alt=""
+                        class="social-logo"> </a>
+                <a href="https://linkedin.com" target="_blank"> <img src="/img/socialMediaicon/linkedin.png" alt=""
+                        class="social-logo"> </a>
+                <a href="https://snapchat.com" target="_blank"> <img src="/img/socialMediaicon/snapchat.png" alt=""
+                        class="social-logo"> </a>
+                <a href="https://twitter.com" target="_blank"> <img src="/img/socialMediaicon/twitter.png" alt=""
+                        class="social-logo"> </a>
+            </div>
+            <p id="signUp"><a href="#">Sign up</a> for a Customized Consultation or give us a call <span
+                    id="ph-no">(91)-95457-399812</span></p>
+        </footer>
+    
+     
+        <script src="/nav.js"></script>
+</body>
+</html>
