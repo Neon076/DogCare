@@ -1,0 +1,20 @@
+.imgContent{
+    font-size: 15px;
+}
+
+.img img:hover~.imgContent,.imgContent:hover{
+        color: black;
+        font-size: 16.75px;
+
+}
+    
+.img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.btn-app {
+    width: 12%;
+    font-size: 20px;
+    padding: 6px 18px;
+}
