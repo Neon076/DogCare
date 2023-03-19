@@ -1,0 +1,453 @@
+html {
+  scroll-behavior: smooth;
+  animation: ani 0.6s ease-in-out 0.1s 1 normal both;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes ani {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Reset Values */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* opacity: 0.8;
+       transition: opacity 0.3s ease-in-out; */
+  background-image: linear-gradient(to top, aquamarine, pink);
+}
+
+/* Navigation Bar */
+.navigationBar {
+  display: flex;
+  justify-content: end;
+  /* border: 2px solid red; */
+  background-color: aquamarine;
+  /* position:fixed; */
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  /* border: 2px solid b/lue; */
+  margin: 10x 10px;
+
+}
+
+.navigation li {
+  list-style-type: none;
+  padding: 20px 20px;
+  font-size: 22px;
+
+}
+
+.navigationBar ul li a {
+  text-decoration: none;
+}
+
+.navigationBar ul li a.active {
+  color: rgb(153, 153, 153);
+  text-decoration: underline;
+}
+
+.navigationBar ul li a:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* collapsable NavBar */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-otut;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+/* Logo */
+.navigationBar .logo {
+  /* border: 2px solid red; */
+  position: absolute;
+  left: 33px;
+  padding: 9px 11px;
+  background-color: pink;
+  margin: 17px 40px;
+  font-family: cursive;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  cursor: pointer;
+}
+
+.navigationBar .logo:hover {
+  background-color: black;
+  color: aliceblue;
+  box-shadow: 0px 6px 7px black;
+}
+
+/* End of Navigation Bar */
+
+
+
+/* ultilites */
+.heading-prim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.para-primary {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.para-secondary {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+/*En of ultilites */
+
+
+/* Cover Image */
+.imgHeader{
+
+  width: 100%;
+}
+.imgHeader::before {
+
+  content: "";
+  z-index: -1;
+  background: url("/img/cover2.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  opacity: 0.7;
+  filter: blur(1px);
+  overflow: hidden;
+}
+
+.h-primary {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  font-size: 3.5rem;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family: cursive;
+  font-weight: bolder;
+  /* border: 2px solid blue; */
+}
+
+.pawfect{
+  font-style: italic;
+  color: #694400;
+  text-decoration:underline ;
+}
+
+.para-primary span{
+  color:black;
+}
+
+
+/* Buttons */
+.btn-nav {
+  width: 60%;
+  height: auto;
+  margin: 2px auto;
+  /* border: 2px solid yellow; */
+
+}
+
+.btn-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  height: 50px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0%;
+}
+
+.btn-nav ul li {
+  list-style-type: none;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.btn-nav ul li:hover {
+  transform: rotateY(360deg);
+}
+
+.btn-item a {
+  background-color: aliceblue;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: large;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-item a:hover {
+  box-shadow: 3px 3px 8px black;
+  background-color: pink;
+}
+
+/* Cover */
+
+
+.cover {
+  /* border: 2px solid red; */
+  height: 93vh;
+}
+
+/*End of Cover Image */
+
+/* Dog Gadgets */
+.DogGadgets{
+  height: auto;
+  margin: 2px auto;
+  /* border: 2px solid yellow; */
+  width: 100%;
+  background-color: aquamarine;
+  padding: 20px 0px;
+  display: none;
+  transition: all 0.3 ease-in-out;
+}
+.Gadgets{
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid yellow; */
+}
+.Gadgets li{
+  font-size: 20px;
+  /* border: 2px solid black; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 2px 20px;
+  color: black;
+  cursor: pointer;
+
+}
+
+.Gadgets li:hover{
+  box-shadow: 3px 3px 8px black;
+  background-color: pink;
+}
+
+.Gadgets li a{
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+.gadgetImg img{
+  display: block;
+  margin: 0px auto;
+  width: 20%;
+  /* border: 2px solid green; */
+  transition: all 0.2 ease-in-out;
+  border-radius: 25px;
+ 
+}
+
+
+/* ---// Food product */
+#food{
+  display: none;
+  margin: 66px 0px;
+}
+#belt{
+  display: none;
+  margin: 66px 0px;
+}
+#toys{
+  display: none;
+  margin: 66px 0px;
+}
+#acc{
+  display: none;
+  margin: 66px 0px;
+}
+
+/* Activities */
+#act {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+
+.services img {
+  width: 80%;
+  height: 5%;
+  border-radius: 10%;
+}
+
+.services {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border: 2px solid blue; */
+  padding: 6px 10px;
+
+}
+
+.flex-item:hover {
+  box-shadow: 0px 0px 10px black;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.services img:hover {
+  width: 90%;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.btn-app {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  background-color: pink;
+  width: 30%;
+  font-size: large;
+  border-radius: 7px;
+  padding: 2px 15px;
+}
+
+.btn-app:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+
+@keyframes start {
+  from {
+    width: 10%;
+    height: 20%;
+    opacity: 0;
+  }
+
+  to {
+    height: 50%;
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+.aboutImg {
+  display: flex;
+  /* border: 2px solid firebrick; */
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg img {
+  /* border: 2px solid red; */
+  width: 18%;
+  border-radius: 10px;
+}
+
+.about-content {
+  /* border: 2px solid blue; */
+  margin: 2px 10px;
+  padding: 2px 25px;
+  max-width: fit-content;
+  font-size: 25px;
+  text-align: justify;
+}
+
+
+/* Footer Section */
+footer {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-logo {
+  width: 40%;
+}
+
+.footer-items a {
+  text-decoration: none;
+}
+
+footer .para-primary {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#signUp {
+  font-weight: bold;
+}
+
+#signUp a {
+  color: black;
+}
+
+#signUp a:hover,
+#ph-no:hover {
+  color: blue;
+}
+
+#ph-no {
+  color: darkcyan;
+}
