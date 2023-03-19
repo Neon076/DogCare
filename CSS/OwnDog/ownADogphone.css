@@ -1,0 +1,32 @@
+.imgContent{
+    font-size: 15px;
+}
+
+.img img:hover~.imgContent,.imgContent:hover{
+        color: black;
+        font-size: 16.75px;
+
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+}
+.btn-app {
+    width: 16%;
+    font-size: 20px;
+    padding: 6px 18px;
+}
+.services img:hover {
+    width: 65%;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.1s;
+
+}
+
+.img img {
+    width: 50%;
+}
+.btn-app{
+    width: 28%;
+}
