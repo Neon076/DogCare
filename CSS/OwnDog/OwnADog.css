@@ -1,0 +1,102 @@
+body{
+    /* background-image: linear-gradient(to top,aquamarine ,pink); */
+    height: 100%;
+    overflow-x: hidden;
+}
+.img{
+    margin: 30px 0px;
+
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    z-index: -1;
+}
+.img img{
+     width: 50%;
+    
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px black;
+    animation: start 2s ease-in-out 0.2s 1;
+    animation: start 0.5s ease-in-out 0.2s 1;
+
+}
+@keyframes start {
+    from{
+        width: 10%;
+        height:20%;
+        opacity: 0;
+    }
+    to{
+        width: 100%;
+        opacity: 1;
+    }
+    
+}
+.imgContent{
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+    margin: 5px 30px;
+    font-size: 18px;
+    color: #030653;
+    font-weight: light;
+    font-family: cursive;
+    transition: all 0.5s ease-in-out;
+    text-align: justify;
+}
+
+.img img:hover~.imgContent,.imgContent:hover{
+        color: black;
+        /* font-weight: bold; */
+        font-size: 20.75px;
+
+}
+
+.headingPrim{
+    font-weight: bolder;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out 0.1s;
+    animation: headingStart 1.5s ease-in-out 1 both;
+
+}
+@keyframes headingStart {
+
+    from{
+        font-size: 5px;
+    }
+    to{
+        font-size: 25px;
+    }
+    
+}
+.img img:hover{
+    filter: blur(1.5px);
+}
+.img img:hover~.headingPrim,.headingPrim:hover{
+    top: 71vh;
+    font-size: 35px;
+    left: 55px;
+    /* color: aliceblue; */
+    text-decoration: underline;
+}
+
+/*  Choose A dog*/
+
+.flex-item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 2px solid blue; */
+    /* padding: 6px 10px; */
+    
+  }
+
+.services{
+    margin: 5px 3px;
+}
+  .flex-item img{
+    border-radius: 10%;
+  }
