@@ -1,0 +1,40 @@
+.container {
+    border: 2px solid wheat;
+    border-radius: 15px;
+    width: 33%;
+    display: inline-block;
+    padding: 19px 15px;
+    margin: 1px 40px;
+    color: aliceblue;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+    height: 70%;
+}
+.container:hover{
+    backdrop-filter: blur(10px);
+    
+}
+
+.container h2{
+    /* display: block; */
+    margin: 2px auto;
+    padding: 10px 23px;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.form-group input {
+    display: block;
+    width: 95%;
+    padding: 7px 3px;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/* content */
+.content{
+    font-size: 20px;
+}
+

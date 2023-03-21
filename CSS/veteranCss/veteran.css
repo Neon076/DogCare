@@ -1,0 +1,72 @@
+.imgHeader::before {
+
+    content: "";
+    z-index: -1;
+    background: url("/img/veteran/pexels-mikhail-nilov-7468981.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    opacity: 0.7;
+    filter: blur(1px);
+    overflow: hidden;
+}
+.imgHeader{
+
+    /* border: 2px solid red; */
+    width: 70%;
+}
+  .h-primary {
+    color: rgb(9 0 0);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items:flex-start;
+    height: 350px;
+    font-size: 3.5rem;
+    font-family: cursive;
+    font-weight: bolder;
+    /* /* border: 2px solid blue */
+}
+
+.para-primary{
+    font-weight: lighter;
+}
+.para-primary span{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+  /* doctors */
+
+.docHeading{
+        margin: 40px 0px;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        font-style: italic;
+    
+}
+.docImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* width: 100%; */
+    margin: 30px 0px;
+
+}
+.docImg img{
+    width: 50%;
+    border-radius: 15px;
+}
+.docImg-2 img{
+    width: 30%;
+    border-radius: 15px;
+}
+
+.docContent{
+    font-size: 25px;
+}

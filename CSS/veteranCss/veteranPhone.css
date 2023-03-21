@@ -1,0 +1,25 @@
+.onImg .para-primary {
+    font-size: 14px;
+}
+
+.h-primary div {
+    font-size: 24px;
+}
+
+.docContent {
+    font-size: 15px;
+}
+
+.docImg-2 img {
+    width: 40%;
+
+}
+.docHeading {
+    font-size: 23px;
+}
+.docImg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}

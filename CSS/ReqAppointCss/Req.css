@@ -1,0 +1,117 @@
+/* body{
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+} */
+html{
+    animation: ani 0.9s ease-in-out 0.1s 1 normal both;
+}
+@keyframes ani{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.headerImg::before{
+    background: url("/img/ReqCover.jpg") no-repeat center/cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Appointment Form */
+.container {
+    border: 2px solid wheat;
+    border-radius: 15px;
+    width: 33%;
+    display: inline-block;
+    padding: 19px 52px;
+    margin: 18px 40px;
+    color: aliceblue;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+    height: fit-content;
+    backdrop-filter: blur(10px);
+}
+.container:hover{
+    backdrop-filter: blur(10px);
+    
+}
+
+.container h2{
+    /* display: block; */
+    margin: 2px auto;
+    padding: 0px 23px;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+.form-group input {
+    display: block;
+    width: 95%;
+    padding: 7px 3px;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    text-align: center;
+}
+.form-group select{
+    display: block;
+    width: 95%;
+    padding: 7px 3px;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/*  */
+#Appointment{
+    font-size: 17px;
+    color:aliceblue;
+    margin-top: 10px;
+    /* padding: 5px; */
+    /* margin-bottom: ; */
+    font-weight: bold;
+}
+input[type="submit"]{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 9px;
+    display: block;
+    margin: 1px auto;
+    width: 70%;
+    padding: 5px 2px;
+}
+/* .cover{
+    display: flex;
+    flex-direction: column;
+} */
+/* Form Over */
+
+/* Content */
+
+.content{
+    display: inline-block;
+    position: absolute;
+    top: 315px;
+    right: 17px;
+    font-size: 30px;
+    /* border: 2px solid wheat; */
+    border-radius: 10px;
+    width: 50%;
+    font-style: italic;
+    font-family: cursive
+}
+
+
+/* Req Appointment Over */
+
