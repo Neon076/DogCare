@@ -1,0 +1,172 @@
+     body {
+       overflow-x: hidden;
+     }
+
+     /* Logo */
+     .navigationBar .logo {
+       font-size: 20px;
+     }
+
+     .navigation li {
+       list-style-type: none;
+       padding: 20px 20px;
+       font-size: 17px;
+
+     }
+
+     /* Nav Items */
+     /* collapsable NavBar */
+
+     .hamburger {
+       display: block;
+       padding: 4px 27px;
+       margin: 27px 14px;
+     }
+
+     .hamburger.active .bar:nth-child(2) {
+       opacity: 0;
+     }
+
+     .hamburger.active .bar:nth-child(1) {
+       transform: translateY(8px) rotate(45deg);
+     }
+
+     .hamburger.active .bar:nth-child(3) {
+       transform: translateY(-8px) rotate(-45deg);
+     }
+
+     .navigation.active {
+       left: 0;
+       z-index: 100;
+     }
+
+     .navigation {
+       position: absolute;
+       left: -200%;
+       top: 70px;
+       gap: 0px;
+       flex-direction: column;
+       background-color: aquamarine;
+       width: 100%;
+       text-align: center;
+       transition: 0.5s ease-in-out;
+       z-index: 100;
+     }
+
+     /* collapsable Navbar ends */
+
+     /* Cover Title */
+     .h-primary div {
+       font-size: 30px;
+     }
+
+     .onImg .para-primary {
+       font-size: 20px;
+     }
+
+     .h-primary {
+       height: 215px;
+     }
+
+     /* Butttons on Cover Image */
+     .btn-nav ul {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       width: 60vw;
+       height: 24vh;
+       align-items: center;
+     }
+
+     .btn-nav ul li a {
+       font-size: 16px;
+       padding: 9px;
+     }
+
+     /* dog gadgets */
+
+     .Gadgets {
+       display: flex;
+       flex-direction: column;
+     }
+
+     .Gadgets li {
+       font-size: 15px;
+
+     }
+
+     .gadgetImg img {
+       width: 13%;
+     }
+
+     /*Activities */
+     .heading-prim {
+       font-size: 30px;
+       margin-top: 60px;
+     }
+
+     .services {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+     }
+
+     .services img {
+       width: 50%;
+       height: 50%;
+     }
+
+     .services .flex-item .para-primary {
+       font-size: 18px;
+     }
+
+     .para-secondary {
+       font-size: 17px;
+     }
+
+     #act {
+       font-size: 13px;
+     }
+
+     .btn-app {
+       width: 17%;
+       font-size: 13px;
+       padding: 6px 24px;
+     }
+
+     .services img:hover {
+       width: 50%;
+     }
+
+     /*Activities  End*/
+
+     /* Footer */
+
+     footer p {
+       font-size: 15px;
+     }
+
+     footer .para-primary {
+       font-size: 20px;
+     }
+
+     .social-logo {
+       width: 50%;
+     }
+
+     /* about Us */
+     .aboutImg {
+       display: flex;
+       /* border: 2px solid firebrick; */
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+     }
+
+     .aboutImg img {
+       width: 50%;
+     }
+
+     .about-content {
+       font-size: 13px;
+     }
